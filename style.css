@@ -275,7 +275,7 @@ span:hover {
     align-items: center;
     justify-content: center;
     color: white;
-    border-bottom: 1px solid var(--clr-bg3);
+    border-bottom: 1px solid var(--clr-bg1);
 }
 
 .second-main {
@@ -311,8 +311,8 @@ span:hover {
 }
 
 .second-header1 {
-    font-size: 3em;
-
+    font-size: 4em;
+    color: var(--clr-text1);
 }
 
 .techs-logo{
@@ -330,33 +330,109 @@ span:hover {
 /* Third section starts */
 
 .third{
-    height: 100vh;
+    margin-top: 15vh;
+    height: max-content;
     width: 100vw;
-    background-color: #fff; 
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
+}
+
+.third-div-h1{  
+    color: var(--clr-text1);
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    width: 40%;
+}
+.third-h{
+    text-align: start;
 }
 
 .third-main-projects{
-    height: 80%;
-    width: 50%;
+    height: 100%;
+    width: 40%;
+    background-color:  ;
     display: grid;
-    grid-template-columns:1fr 1fr ;
-    grid-template-rows:1fr 1fr;
-    background-color: gray;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2em;
+    align-items: center;
+    justify-content: center;
 }
 
 .third-projects-cards{
-    height: ;
+    height: 100%;
+    width: 100%;
+    border-radius: 1em;
+    display: flex;
+    background-color: rgba(204, 201, 201, 0.1);
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: box-shadow 0.4s ease-out;
+}
 
+.third-projects-cards:hover{
+    transform: scale(1.4em);
+    box-shadow: 1px 5px 10px 1px rgba(243, 239, 239, 0.404);
+
+}
+
+
+.third-project-wrapper{
+    width: 90%;
+    height: 100%;
+    border-radius: 0.5em;
+}
+
+.third-project-img-wrapper{
+    height: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    border:#060606 2px solid;
 }
 
 .third-project-img{
-    height: 80px;
+    height: 80%;
+    border-radius: 0.5em;
+    width: 100%;
+    margin-bottom: 2.4em;
+}
+
+.third-project-info{
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 0.5em;
+
+}
+
+.project-tech-used{
+    height: 100%;
+    display: flex;
+    gap: 1em;
+    margin-bottom: 3em;
+}
+
+.third-h4{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 1.5em;
+    height: fit-content;
+    margin: 0em 0 0.6em 0; 
+    text-align: start;
+    color: var(--clr-text2);
+}
+
+.project-name{
+    border-radius: 0.5em;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1px 10px 0px 10px;
+    background-color: var(--clr-text3);
 }
