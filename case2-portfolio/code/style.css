@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: radikal;
+    src: url(../Assets/Nootype\ -\ Radikal\ Medium.otf);
+}
+body{
+    background-color: #f9f9f9;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+nav{
+    width: 13vw;
+    height: 100vh;
+    display: flex;
+    padding-bottom: 17em;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+}
+.nav-links {
+    display: flex;
+    width: max-content;
+    flex-direction: column;
+    gap: 3em;
+    text-align: start;
+}
+.nav-links a {
+    font-size: 2em;
+    font-family: radikal;
+    color: #010101;
+    text-decoration: none;
+    position: relative; /* Needed for the pseudo-element */
+}
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -0.2em;
+    width: 100%;
+    height: 3px;
+    background: #010101;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    transform-origin: left;
+}
+.nav-links.current::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -0.2em;
+    width: 100%;
+    height: 3px;
+    background: #010101;
+    transform: scaleX(1);
+    transition: none;
+    transform-origin: left;
+}
+.nav-links a:hover::after {
+    transform: scaleX(1);
+}
+main{
+    width: 85vw;
+    position: relative;
+    display: flex;
+}
+.photo{
+    width: 30vw;
+    position: relative;
+}
+@keyframes revolve {
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+.photo-img{
+    width: 30em;
+    position: absolute;
+    top: 7em;
+    left: 2em;
+    border-radius: 50%;
+}
+.orbit-dot {
+    position: absolute;
+    top: 22em;
+    left: 17em;
+    width:2em;
+    height: 2em;
+    background: orange;
+    border-radius: 50% 50% 50% 50% ;
+    transform: translate(-50%, -50%) rotate(0deg) translateX(17em);
+    animation: revolve-dot 10s linear infinite;
+    z-index: 2;
+    pointer-events: none;
+}
+@keyframes revolve-dot {
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg) translateX(17em);
+    }
+}
+.description{
+    width:55vw;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding-bottom: 10em;
+    flex-direction: column;
+}
+h1{
+    font-size: 8em;
+    font-family:radikal ;
+    position: relative;
+    display: inline-block;
+}
+p{
+    font-size: 3em;
+    position: relative;
+    display: inline-block;
+}
+button{
+    font-size: 1.4em;
+    width:8em;
+    padding: 0.8em;
+    letter-spacing: 0.09em;
+    font-family: radikal;
+    margin-top: 2em;
+    border-radius: 0.7em;
+    border: none;
+}
+.hire-form button{
+    margin-top: 1em;
+}
+button:hover {
+    box-shadow: 0 8px 14px rgba(0,0,0,0.18) , 0 1px 6px rgba(0,0,0,0.12);
+    background: #f0f0f0;
+    transform: translateY(-3px);
+    transition: box-shadow 0.2s, transform 0.2s;
+    cursor: pointer;
+}
+button:active {
+    box-shadow: 0 2px 6px rgba(0,0,0,0.18) inset, 0 1px 3px rgba(0,0,0,0.12) inset;
+    background: #ececec;
+    transform: translateY(1px);
+    transition: box-shadow 0.1s, transform 0.1s;
+}
+.projects-main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+    padding: 3em;
+    align-items: start; /* Prevent cards from stretching vertically */
+}
+.project-card {
+    background: #fff;
+    border-radius: 1em;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    padding: 2.2em 1.65em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: box-shadow 0.25s, transform 0.25s;
+    margin: 0 auto;
+    height: auto;
+    max-width: 440px;
+    min-width: 220px;
+}
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.18), 0 1.5px 6px rgba(0,0,0,0.12);
+    z-index: 2;
+}
+.project-img {
+    width: 100%;
+    max-width: 440px;
+    height: 220px;           /* Set a fixed height */
+    border-radius: 0.7em;
+    margin-bottom: 0.7em;
+    object-fit: cover;
+}
+.project-card p {
+    font-size: 1em;
+    margin-top: 0.5em;
+    margin-bottom: 0; /* Remove any bottom margin */
+    color: #444;
+    text-align: center;
+}
+.project-card h2 {
+    position: relative;
+    display: inline-block;
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+.project-card h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -0.2em;
+    width: 100%;
+    height: 3px;
+    background: #010101;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    transform-origin: left;
+}
+.project-card:hover h2::after {
+    transform: scaleX(1);
+}
+.hire-form {
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2em;
+    min-width: 30vw;
+    margin: 4.5em;
+    background: #fff;
+    padding: 2em 2.5em;
+    border-radius: 1em;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+#comment{
+    height: 13em;
+    padding: 0.7em;
+    border: 1px solid #ccc;
+    border-radius: 0.5em;
+    font-size: 1em;
+    font-family: radikal;
+    text-align: start;    
+}
+.hire-form label {
+    font-size: 1.1em;
+    margin-bottom: 0.2em;
+    font-family: radikal;
+}
+.hire-form input {
+    padding: 0.7em;
+    border: 1px solid #ccc;
+    border-radius: 0.5em;
+    font-size: 1em;
+    font-family: radikal;
+    text-align: start;
+}
