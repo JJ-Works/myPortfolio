@@ -243,3 +243,96 @@ button:active {
     font-family: radikal;
     text-align: start;
 }
+
+/* Responsive styles for mobile devices */
+@media (max-width: 700px) {
+    body {
+        display: block;
+    }
+    nav {
+        width: 100vw;
+        height: auto;
+        flex-direction: row;
+        border-right: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        padding-bottom: 0;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 1em 0.5em;
+    }
+    .nav-links {
+        flex-direction: row;
+        gap: 1.5em;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+    .nav-links a {
+        font-size: 1.1em;
+        padding: 0.5em 0.7em;
+    }
+    main {
+        width: 100vw;
+        flex-direction: column;
+        align-items: center;
+        padding: 1em 0.5em;
+    }
+    .photo {
+        width: 80vw;
+        min-width: 0;
+        margin: 0 auto;
+        position: relative;
+    }
+    .photo-img {
+        width: 70vw;
+        min-width: 0;
+        left: 0;
+        top: 2em;
+        position: static;
+        display: block;
+        margin: 0 auto;
+    }
+    .orbit-dot {
+        display: none;
+    }
+    .description {
+        width: 95vw;
+        align-items: center;
+        padding-bottom: 2em;
+        text-align: center;
+    }
+    h1 {
+        font-size: 2.2em;
+    }
+    p {
+        font-size: 1.1em;
+    }
+    button {
+        font-size: 1em;
+        width: 7em;
+        padding: 0.7em;
+        margin-top: 1em;
+    }
+    .projects-main {
+        grid-template-columns: 1fr;
+        gap: 1em;
+        padding: 1em;
+    }
+    .project-card {
+        max-width: 95vw;
+        min-width: 0;
+        padding: 1em 0.5em;
+    }
+    .project-img {
+        height: 140px;
+    }
+    .hire-form {
+        min-width: 90vw;
+        margin: 1em auto;
+        padding: 1em 0.5em;
+    }
+    #comment {
+        height: 7em;
+        font-size: 1em;
+    }
+}

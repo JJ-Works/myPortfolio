@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<employees>
+  <employee id="E001">
+    <name>Rita Karki</name>
+    <department>Finance</department>
+    <position>Financial Analyst</position>
+    <salary>950000</salary>
+    <hireDate>2019-07-25</hireDate>
+  </employee>
+  
+  <employee id="E002">
+    <name>Bikash Adhikari</name>
+    <department>Engineering</department>
+    <position>Software Engineer</position>
+    <salary>1300000</salary>
+    <hireDate>2012-09-30</hireDate>
+  </employee>
+  
+  <employee id="E003">
+    <name>Anita Gurung</name>
+    <department>Marketing</department>
+    <position>Marketing Manager</position>
+    <salary>700000</salary>
+    <hireDate>2020-02-18</hireDate>
+  </employee>
+
+  <employee id="E004">
+    <name>Santosh Shrestha</name>
+    <department>Engineering</department>
+    <position>Principal Engineer</position>
+    <salary>800000</salary>
+    <hireDate>2018-03-12</hireDate>
+  </employee>
+
+  <employee id="E005">
+    <name>Prakash Thapa</name>
+    <department>Engineering</department>
+    <position>Senior Software Engineer</position>
+    <salary>1200000</salary>
+    <hireDate>2015-11-05</hireDate>
+  </employee>
+</employees>

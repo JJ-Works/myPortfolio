@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE catalog SYSTEM "products.dtd">
+<catalog>
+  <product id="P001">
+    <name>Smartwatch</name>
+    <category>Wearables</category>
+    <price>199.99</price>
+  </product>
+
+  <product id="P002">
+    <name>Wireless Mouse</name>
+    <category>Accessories</category>
+    <price>29.99</price>
+  </product>
+
+  <product id="P003">
+    <name>Tablet</name>
+    <category>Electronics</category>
+    <price>349.99</price>
+  </product>
+
+  <product id="P004">
+    <name>Gaming Keyboard</name>
+    <category>Accessories</category>
+    <price>89.99</price>
+  </product>
+</catalog>

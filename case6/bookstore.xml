@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bookstore xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:noNamespaceSchemaLocation="bookstore.xsd">
+           
+  <book isbn="978-9937901234" category="history">
+    <title>History of Nepal</title>
+    <author>Baburam Acharya</author>
+    <price>25.00</price>
+    <published>2015-03-15</published>
+  </book>
+
+  <book isbn="978-9937905678" category="travel">
+    <title>Trekking in the Himalayas</title>
+    <author>Lisa Choegyal</author>
+    <price>30.00</price>
+    <published>2019-10-05</published>
+  </book>
+
+</bookstore>
